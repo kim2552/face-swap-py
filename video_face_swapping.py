@@ -16,7 +16,7 @@ img = cv2.imread("cardi.jpg")
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 mask = np.zeros_like(img_gray)
 
-cap = cv2.VideoCapture('joe.mp4')
+cap = cv2.VideoCapture("joe.mp4")
 
 _, img2 = cap.read()
 print((len(img2[0]),len(img2)))
